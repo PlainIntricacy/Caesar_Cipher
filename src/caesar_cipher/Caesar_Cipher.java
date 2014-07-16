@@ -1,10 +1,11 @@
 package caesar_cipher;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  *
  * @author todyerutz @ plainintricacy.wordpress.com
+ * Java program that simulates an encryption device based on the Caesar Cipher:
+ * https://en.wikipedia.org/wiki/Caesar_cipher
  */
 public class Caesar_Cipher {
     
@@ -23,7 +24,7 @@ public class Caesar_Cipher {
             encrypt(arr, sKey);
             System.out.println();
         }
-        
+    
     }
     
     public static boolean isLetter(Character x){
