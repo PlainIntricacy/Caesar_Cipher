@@ -1,4 +1,4 @@
-Caesar_Cipher
+Caesar_Cipher_key_decrypt
 =============
 
 Java program that simulates a basic decryption device using a Caesar Cipher key (shift number).
