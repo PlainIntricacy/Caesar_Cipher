@@ -12,7 +12,6 @@ public class Caesar_Cipher {
     public static String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
     public static void main(String[] args) {
-
         try (Scanner input = new Scanner(System.in)) {
             System.out.println("Please enter your message:");
             String inText = input.nextLine();
@@ -23,8 +22,7 @@ public class Caesar_Cipher {
             System.out.println("Encrypted message:");
             encrypt(arr, sKey);
             System.out.println();
-        }
-    
+        }    
     }
     
     public static boolean isLetter(Character x){
@@ -65,4 +63,5 @@ public class Caesar_Cipher {
             System.out.print(a[i]);
         }
     }
+    
 }
