@@ -4,7 +4,9 @@ import java.util.Scanner;
 /**
  *
  * @author todyerutz @ plainintricacy.wordpress.com
- * Java program that simulates an encryption device based on the Caesar Cipher:
+ * Java program that simulates a basic decryption device using a Caesar Cipher key (shift number).
+ * It requires an encrypted message and the key used to encrypt it.
+ * Based on the Caesar Cipher:
  * https://en.wikipedia.org/wiki/Caesar_cipher
  */
 public class Caesar_Cipher {
@@ -16,11 +18,10 @@ public class Caesar_Cipher {
             System.out.println("Please enter your message:");
             String inText = input.nextLine();
             char[] arr = inText.toUpperCase().toCharArray();
-            System.out.println("Please enter your shift number.");
-            System.out.println("Positive integers for right shift, negative integers for left shift.");
+            System.out.println("Please enter your key.");
             int sKey = Integer.parseInt(input.nextLine());
-            System.out.println("Encrypted message:");
-            encrypt(arr, sKey);
+            System.out.println("Decrypted message:");
+            decrypt(arr, sKey);
             System.out.println();
         }    
     }
@@ -53,7 +54,8 @@ public class Caesar_Cipher {
         return x;
     }
             
-    public static void encrypt(char[] a, int x){
+    public static void decrypt(char[] a, int x){
+        x = -x;
         for(int i=0; i<a.length; i++){
             if(isLetter(a[i])){
                 a[i] = alphabet.charAt(Lpos(alphabet.charAt(Apos(Lpos(a[i])+x))));
