@@ -22,6 +22,7 @@ public class Caesar_Cipher {
             System.out.println("Encrypted message:");
             encrypt(arr, sKey);
             System.out.println();
+            input.close();
         }    
     }
     
