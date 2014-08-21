@@ -23,6 +23,7 @@ public class Caesar_Cipher {
             System.out.println("Decrypted message:");
             decrypt(arr, sKey);
             System.out.println();
+            input.close();
         }    
     }
     
